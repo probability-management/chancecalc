@@ -1,39 +1,84 @@
 # ChanceCalc
 Stochastic modeling tools for Excel
 
-## Files required to run ChanceCalc
-- MIT_LICENSE.txt
-- ChanceCalc_PLUS.xlam
-- SPT Metalogs for SIPmath.xlsx
-- Metalog Sum of IID Triangulars and Lognormals.xlsx
-- horizontal 1-line layout template.xlsx
-- vertical 1-col layout template.xlsx
-- Palette.xlsx 
+## Installation
 
-## You don't absolutely NEED the next two to run CC but there are a couple of help screens for the SPT that CC will show sometimes. I don't think CC will break if they aren't there but you'll see a blank screen or an error message.
+- download and run the install package for your system
+- Activate the ChanceCalc add-in as follows:
+- Start Excel
+- Open the Excel Add-ins manager 
+    - On Windows
+        - Open or create an Excel workbook
+        - Press Alt-T-I
+    - On Macintosh
+        - Click Tools on the menu
+        - Click Excel Add-ins... on the Tools sub-menu
+- The Add-ins manager displays a list of available and installed add-ins
+- Remove any existing ChanceCalc or SIPmath add-ins 
+    - if any add-ins in the list named ChanceCalc or SIPmath are checked, uncheck them
+- Press the Browse... button
+    - Browse to the folder where the ChanceCalc files were installed
+    - Find and select the file Beta_ChanceCalc_Plus.xlam
+    - Press OK to close the Browse dialog
+- The ChanceCalc add-in should be checked in the list of available add-ins
+- Press OK to close the add-ins manager.
 
-- help_SPT_row.jpg
-- help_SPT_column.jpg
+## Using ChanceCalc
 
-## Documentation, tutorial and example files
-- Getting Started with Beta_ChanceCalc_Plus 2024-09-05.pdf
-- ChanceCalc Tutorial 2023-08-08.pdf
-- Guide to ChanceCalc Monte Carlo 10-16-2022.pdf
-- Libraries\COVID-19+Daily+Hospitalization+Forecast_url_csv_for_pm.org.SIPmath
-- Libraries\Demand_SIP_Library.xlsx
-- Libraries\Development_Time_Library.SIPmath
-- Libraries\DFHBF_MORS_Lib+-2021-09-20.SIPmath
-- Libraries\Flight_Hours_to_Failure_Library.SIPmath
-- TutorialFiles\Behind Schedule Example.xlsx
-- TutorialFiles\Below Projection Example.xlsx
-- TutorialFiles\Below Projection Multi Experiment.xlsx
-- TutorialFiles\Beyond Budget.xlsx
-- TutorialFiles\First Part Failure.xlsx
-- TutorialFiles\Inventory.xlsx
-- ELDMetalogs_v11.xlsx
-- ELDMetalogs_v11_multi.xlsx
-- Metalogs_v11.xlsx
+![Title](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide1.JPG>)
 
-## Tornado addin
-- Tornado Chart tool guide 9-24-2024.pdf
-- Tornado_Addin_8.xlam
+![Contents](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide2.JPG>)
+
+![Introduction](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide3.JPG>)
+
+## ChanceCalc Tab
+
+![ChanceCalc Ribbon](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide4.JPG>)
+
+![SIP Input dialog](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide5.JPG>)
+
+![Graphs](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide6.JPG>)
+
+![Chance of Whatever](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide7.JPG>)
+
+![Average, Std Dev, Percent](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide8.JPG>)
+
+![Tail Risk](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide9.JPG>)
+
+![Save as CSV](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide10.JPG>)
+
+![Trial Info](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide11.JPG>)
+
+![Settings | Simulation](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide12.JPG>)
+
+![Settings | Formatting & Diagnostic](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide13.JPG>)
+
+![Settings | Advanced](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide14.JPG>)
+
+## Metalog Tab
+
+![Metalog Ribbon](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide15.JPG>)
+
+![Metalog Interface](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide16.JPG>)
+
+![Metalog Interface - cont'd](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide17.JPG>)
+
+![SIPmath mode, to Clipboard button](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide18.JPG>)
+
+![SIPmath mode, to File button](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide19.JPG>)
+
+![to Excel mode, Paste to Excel](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide20.JPG>)
+
+![to Excel mode, Link to Excel](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide21.JPG>)
+
+## Monte Carlo Tab
+
+![Monte Carlo Ribbon](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide22.JPG>)
+
+![Appendix 1: Troubleshooting](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide23.JPG>)
+
+![Appendix 2: Lambda Functions](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide24.JPG>)
+
+![Lambda Functions, cont'd](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide25.JPG>)
+
+![HDR and M.SPT_u functions](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide26.JPG>)
