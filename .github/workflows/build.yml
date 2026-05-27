@@ -1,0 +1,86 @@
+name: Build from NSIS
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  create-zip:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get version from tag
+        id: version
+        run: |
+          $tag = "${{ github.ref_name }}"
+          $version = $tag -replace '^v', ''
+          Write-Output "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Encoding utf8
+        shell: pwsh
+
+      - name: Create Zip file
+        run: |
+          $version = "${{ steps.version.outputs.version }}"
+          $zipName = "ChanceCalc_Plus_${version}.zip"
+          $tempDir = "ChanceCalc_Plus_${version}"
+          
+          # Create temporary directory structure
+          New-Item -ItemType Directory -Path $tempDir -Force
+          New-Item -ItemType Directory -Path "$tempDir\Libraries" -Force
+          New-Item -ItemType Directory -Path "$tempDir\TutorialFiles" -Force
+          
+          # Copy root files
+          Copy-Item "LICENSE" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "Guide to ChanceCalc Plus 2025-01-16.pdf" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "ChanceCalc_Plus.xlam" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "ChanceCalc Tutorial 2023-08-08.pdf" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "Getting Started with Beta_ChanceCalc_Plus 2024-09-05.pdf" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "SPT Metalogs for SIPmath.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "help_SPT_row.jpg" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "help_SPT_column.jpg" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "horizontal 1-line layout template.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "vertical 1-col layout template.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "Metalog Sum of IID Triangulars and Lognormals.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "Palette.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "ELDMetalogs_v11.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "ELDMetalogs_v11_multi.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "Metalogs_v11.xlsx" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          Copy-Item "workaround.bat" -Destination "$tempDir\" -ErrorAction SilentlyContinue
+          
+          # Copy Libraries files
+          Copy-Item "COVID-19+Daily+Hospitalization+Forecast_url_csv_for_pm.org.SIPmath" -Destination "$tempDir\Libraries\" -ErrorAction SilentlyContinue
+          Copy-Item "Demand_SIP_Library.xlsx" -Destination "$tempDir\Libraries\" -ErrorAction SilentlyContinue
+          Copy-Item "Development_Time_Library.SIPmath" -Destination "$tempDir\Libraries\" -ErrorAction SilentlyContinue
+          Copy-Item "DFHBF_MORS_Lib+-2021-09-20.SIPmath" -Destination "$tempDir\Libraries\" -ErrorAction SilentlyContinue
+          Copy-Item "Flight_Hours_to_Failure_Library.SIPmath" -Destination "$tempDir\Libraries\" -ErrorAction SilentlyContinue
+          
+          # Copy TutorialFiles
+          Copy-Item "TutorialFiles\Behind Schedule Example.xlsx" -Destination "$tempDir\TutorialFiles\" -ErrorAction SilentlyContinue
+          Copy-Item "TutorialFiles\Below Projection Example.xlsx" -Destination "$tempDir\TutorialFiles\" -ErrorAction SilentlyContinue
+          Copy-Item "TutorialFiles\Below Projection Multi Experiment.xlsx" -Destination "$tempDir\TutorialFiles\" -ErrorAction SilentlyContinue
+          Copy-Item "TutorialFiles\Beyond Budget.xlsx" -Destination "$tempDir\TutorialFiles\" -ErrorAction SilentlyContinue
+          Copy-Item "TutorialFiles\First Part Failure.xlsx" -Destination "$tempDir\TutorialFiles\" -ErrorAction SilentlyContinue
+          Copy-Item "TutorialFiles\Inventory.xlsx" -Destination "$tempDir\TutorialFiles\" -ErrorAction SilentlyContinue
+          
+          # Create zip file
+          Compress-Archive -Path "$tempDir\*" -DestinationPath $zipName -Force
+          
+          # Clean up temp directory
+          Remove-Item -Path $tempDir -Recurse -Force
+          
+          Write-Output "Created $zipName"
+        shell: pwsh
+
+      - name: Create GitHub Release and upload zip
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "ChanceCalc Plus v${{ steps.version.outputs.version }}"
+          tag_name: ${{ github.ref_name }}
+          files: ChanceCalc_Plus_*.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
