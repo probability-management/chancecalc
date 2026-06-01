@@ -3,25 +3,25 @@ Stochastic modeling tools for Excel
 
 ## Installation
 
-- download and run the install package for your system
+- download the ZIP archive with the current version of ChanceCalc from [here](https://github.com/probability-management/ChanceCalc/releases/tag/v1.2.30)
 - Activate the ChanceCalc add-in as follows:
-- Start Excel
-- Open the Excel Add-ins manager 
-    - On Windows
-        - Open or create an Excel workbook
-        - Press Alt-T-I
-    - On Macintosh
-        - Click Tools on the menu
-        - Click Excel Add-ins... on the Tools sub-menu
-- The Add-ins manager displays a list of available and installed add-ins
-- Remove any existing ChanceCalc or SIPmath add-ins 
-    - if any add-ins in the list named ChanceCalc or SIPmath are checked, uncheck them
-- Press the Browse... button
-    - Browse to the folder where the ChanceCalc files were installed
-    - Find and select the file Beta_ChanceCalc_Plus.xlam
-    - Press OK to close the Browse dialog
-- The ChanceCalc add-in should be checked in the list of available add-ins
-- Press OK to close the add-ins manager.
+    - Start Excel
+    - Open the Excel Add-ins manager 
+        - On Windows
+            - Open or create an Excel workbook
+            - Press Alt-T-I
+        - On Macintosh
+            - Click Tools on the menu
+            - Click Excel Add-ins... on the Tools sub-menu
+    - The Add-ins manager displays a list of available and installed add-ins
+    - Remove any existing ChanceCalc or SIPmath add-ins 
+        - if any add-ins in the list named ChanceCalc or SIPmath are checked, uncheck them
+    - Press the Browse... button
+        - Browse to the folder where the ChanceCalc files were installed
+        - Find and select the file ChanceCalc_Plus.xlam
+        - Press OK to close the Browse dialog
+    - The ChanceCalc add-in should be checked in the list of available add-ins
+    - Press OK to close the add-ins manager.
 
 ## Using ChanceCalc
 
