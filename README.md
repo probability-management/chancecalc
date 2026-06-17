@@ -1,27 +1,62 @@
 # ChanceCalc
-Stochastic modeling tools for Excel
+### What is ChanceCalc?
+ChanceCalc+ is an Excel add-in that creates models that use the Data Table function to simulate uncertain outcomes either by reading Stochastic Libraries or performing Monte Carlo simulation.
+
+The models created with ChanceCalc <!-- are stand-alone Excel files that perform hundreds or thousands of simulation trials per key-stroke using the built-in Data Table function, and --> do not require the add-in to run and may be shared with any Excel user. 
+
+### Why does it exist?
+Many Excel users represent uncertain assumptions as single average inputs. This leads to a set of systematic errors  known as the Flaw of Averages. Models built with ChanceCalc+ can cure these errors, leading to better decisions in the face of uncertainty.
+
+### Who should use it?
+Anyone using Excel who is uncertain about their input assumptions.
+
+### Quick video demo
+See the Introduction to ChanceCalc video at the [ProbabilityManagement YouTube channel.](https://www.youtube.com/channel/UCn9qBDt8E1l3z9PX_D1eZgg)
+
+## Requirements
+
+Microsoft Excel
 
 ## Installation
 
-- download and run the install package for your system
+- Download the ZIP archive with the current version of ChanceCalc from [here](https://github.com/probability-management/ChanceCalc/releases/)
+- Unzip the archive to any convenient folder
 - Activate the ChanceCalc add-in as follows:
-- Start Excel
-- Open the Excel Add-ins manager 
-    - On Windows
-        - Open or create an Excel workbook
-        - Press Alt-T-I
-    - On Macintosh
-        - Click Tools on the menu
-        - Click Excel Add-ins... on the Tools sub-menu
-- The Add-ins manager displays a list of available and installed add-ins
-- Remove any existing ChanceCalc or SIPmath add-ins 
-    - if any add-ins in the list named ChanceCalc or SIPmath are checked, uncheck them
-- Press the Browse... button
-    - Browse to the folder where the ChanceCalc files were installed
-    - Find and select the file Beta_ChanceCalc_Plus.xlam
-    - Press OK to close the Browse dialog
-- The ChanceCalc add-in should be checked in the list of available add-ins
-- Press OK to close the add-ins manager.
+    - Start Excel
+    - Open the Excel Add-ins manager 
+        - On Windows
+            - Open or create an Excel workbook
+            - Press Alt-T-I
+        - On Macintosh
+            - Click Tools on the menu
+            - Click Excel Add-ins... on the Tools sub-menu
+    - The Add-ins manager displays a list of available and installed add-ins
+    - Remove any existing ChanceCalc or SIPmath add-ins 
+        - if any add-ins in the list named ChanceCalc or SIPmath are checked, uncheck them
+    - Press the Browse... button
+        - Browse to the folder where the ChanceCalc files were installed
+        - Find and select the file ChanceCalc_Plus.xlam
+        - Press OK to close the Browse dialog
+    - The ChanceCalc add-in should now be checked in the list of available add-ins
+    - Press OK to close the add-ins manager.
+
+## FAQ
+
+ - I get the error “Compile error: method or data member not found”, what should I do?
+    - Make sure ActiveX controls are enabled as described [here.](https://www.probabilitymanagement.org/troubleshooting-excel)
+
+- ChanceCalc worked once, but now it has stopped working.
+    - Make sure that the ChanceCalc add-in (XLAM) file is "unblocked". To do so:
+        - Quit Excel, making sure all open excel files are closed.
+        - Find the ChanceCalc add-in (XLAM) file in Windows Explorer
+        - Right-click on the add-in file to open the context menu
+        - Select the "Properties" menu item to open the "Properties" dialog.
+        - Look for a check box named "Unblock" At the bottom of the "Properties" dialog; check it on.
+            - If there is no check box, then the file is already unblocked.
+        - Press OK.
+
+
+
 
 ## Using ChanceCalc
 
@@ -82,3 +117,8 @@ Stochastic modeling tools for Excel
 ![Lambda Functions, cont'd](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide25.JPG>)
 
 ![HDR and M.SPT_u functions](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide26.JPG>)
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/probability-management/ChanceCalc/blob/main/LICENSE)
+

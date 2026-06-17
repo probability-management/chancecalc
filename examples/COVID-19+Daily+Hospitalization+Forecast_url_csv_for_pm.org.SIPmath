@@ -1,0 +1,327 @@
+{
+  "name": "COVID-19 Daily Hospitalization Forecast",
+  "objectType": "sipModel",
+  "dateCreated": "2021-07-14",
+  "version": "0",
+  "provenance": "SLS",
+  "PM_Trials": 1000,
+  "U01": {
+    "rng": [
+      {
+        "name": "indexRng",
+        "function": "Index",
+        "arguments": {"counter": "PM_Index"}
+      }
+    ]
+  },
+  "sips": [
+    {
+      "name": "ChE_Day01",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day01"
+      },
+      "metadata": {"average": "676.183", "stddev": "103.158543980594"}
+    },
+    {
+      "name": "ChE_Day02",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day02"
+      },
+      "metadata": {"average": "706.087", "stddev": "113.605209275696"}
+    },
+    {
+      "name": "ChE_Day03",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day03"
+      },
+      "metadata": {"average": "703.868", "stddev": "127.216534391653"}
+    },
+    {
+      "name": "ChE_Day04",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day04"
+      },
+      "metadata": {"average": "757.698", "stddev": "121.884250691246"}
+    },
+    {
+      "name": "ChE_Day05",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day05"
+      },
+      "metadata": {"average": "749.827", "stddev": "115.837184549368"}
+    },
+    {
+      "name": "ChE_Day06",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day06"
+      },
+      "metadata": {"average": "763.804", "stddev": "122.908413308699"}
+    },
+    {
+      "name": "ChE_Day07",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day07"
+      },
+      "metadata": {"average": "806.482", "stddev": "144.86985521823"}
+    },
+    {
+      "name": "ChE_Day08",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day08"
+      },
+      "metadata": {"average": "794.899", "stddev": "135.181355215125"}
+    },
+    {
+      "name": "ChE_Day09",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day09"
+      },
+      "metadata": {"average": "831.83", "stddev": "146.360754885217"}
+    },
+    {
+      "name": "ChE_Day10",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day10"
+      },
+      "metadata": {"average": "845.695", "stddev": "149.876024759792"}
+    },
+    {
+      "name": "ChE_Day11",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day11"
+      },
+      "metadata": {"average": "857.659", "stddev": "173.248583806018"}
+    },
+    {
+      "name": "ChE_Day12",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day12"
+      },
+      "metadata": {"average": "864.945", "stddev": "192.194319977547"}
+    },
+    {
+      "name": "ChE_Day13",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day13"
+      },
+      "metadata": {"average": "865.493", "stddev": "167.378366190104"}
+    },
+    {
+      "name": "ChE_Day14",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day14"
+      },
+      "metadata": {"average": "928.28", "stddev": "160.366739354179"}
+    },
+    {
+      "name": "ChE_Day15",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day15"
+      },
+      "metadata": {"average": "953.964", "stddev": "183.840049684142"}
+    },
+    {
+      "name": "ChE_Day16",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day16"
+      },
+      "metadata": {"average": "957.616", "stddev": "187.269619678298"}
+    },
+    {
+      "name": "ChE_Day17",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day17"
+      },
+      "metadata": {"average": "990.547", "stddev": "198.85767817001"}
+    },
+    {
+      "name": "ChE_Day18",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day18"
+      },
+      "metadata": {"average": "982.295", "stddev": "195.756165806984"}
+    },
+    {
+      "name": "ChE_Day19",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day19"
+      },
+      "metadata": {"average": "1005.996", "stddev": "226.381219275011"}
+    },
+    {
+      "name": "ChE_Day20",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day20"
+      },
+      "metadata": {"average": "1006.662", "stddev": "217.976359840808"}
+    },
+    {
+      "name": "ChE_Day21",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day21"
+      },
+      "metadata": {"average": "1064.843", "stddev": "230.455475259489"}
+    },
+    {
+      "name": "ChE_Day22",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day22"
+      },
+      "metadata": {"average": "1080.54", "stddev": "246.730976114825"}
+    },
+    {
+      "name": "ChE_Day23",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day23"
+      },
+      "metadata": {"average": "1100.352", "stddev": "257.277312858542"}
+    },
+    {
+      "name": "ChE_Day24",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day24"
+      },
+      "metadata": {"average": "1107.804", "stddev": "256.276708530712"}
+    },
+    {
+      "name": "ChE_Day25",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day25"
+      },
+      "metadata": {"average": "1101.943", "stddev": "268.675019339381"}
+    },
+    {
+      "name": "ChE_Day26",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day26"
+      },
+      "metadata": {"average": "1121.788", "stddev": "289.687845972357"}
+    },
+    {
+      "name": "ChE_Day27",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day27"
+      },
+      "metadata": {"average": "1119.856", "stddev": "281.0976113935"}
+    },
+    {
+      "name": "ChE_Day28",
+      "function": "SIP_Array",
+      "ref": {"source": "rng", "name": "indexRng"},
+      "arguments": {
+        "type": "csv",
+        "url": "https://www.probabilitymanagement.org/s/COVID-19-Daily-Hospitalization-Forecast.csv",
+        "value": "ChE_Day28"
+      },
+      "metadata": {"average": "1175.288", "stddev": "286.379108962316"}
+    }
+  ]
+}
