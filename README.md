@@ -5,7 +5,7 @@ ChanceCalc+ is an Excel add-in that creates models that use the Data Table funct
 The models created with ChanceCalc <!-- are stand-alone Excel files that perform hundreds or thousands of simulation trials per key-stroke using the built-in Data Table function, and --> do not require the add-in to run and may be shared with any Excel user. 
 
 ### Why does it exist?
-Many Excel users represent uncertain assumptions as single average inputs. This leads to a set of systematic errors  known as the Flaw of Averages. Models built with ChanceCalc+ can cure these errors, leading to better decisions in the face of uncertainty.
+Many Excel users represent uncertain assumptions as single average inputs. This leads to a set of systematic errors known as the [Flaw of Averages.](https://www.flawofaverages.com/) Models built with ChanceCalc+ can cure these errors, leading to better decisions in the face of uncertainty.
 
 ### Who should use it?
 Anyone using Excel who is uncertain about their input assumptions.
