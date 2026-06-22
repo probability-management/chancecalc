@@ -2,7 +2,7 @@
 ### What is ChanceCalc?
 ChanceCalc+ is an Excel add-in that creates models that use the Data Table function to simulate uncertain outcomes either by reading Stochastic Libraries or performing Monte Carlo simulation.
 
-The models created with ChanceCalc <!-- are stand-alone Excel files that perform hundreds or thousands of simulation trials per key-stroke using the built-in Data Table function, and --> do not require the add-in to run and may be shared with any Excel user. 
+The models created with ChanceCalc do not require the add-in to run and may be shared with any Excel user. 
 
 ### Why does it exist?
 Many Excel users represent uncertain assumptions as single average inputs. This leads to a set of systematic errors known as the [Flaw of Averages.](https://www.flawofaverages.com/) Models built with ChanceCalc+ can cure these errors, leading to better decisions in the face of uncertainty.
@@ -60,63 +60,63 @@ Microsoft Excel
 
 ## Using ChanceCalc
 
-![Title](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide1.JPG>)
+![Title](<imgs/Slide1.JPG>)
 
-![Contents](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide2.JPG>)
+![Contents](<imgs/Slide2.JPG>)
 
-![Introduction](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide3.JPG>)
+![Introduction](<imgs/Slide3.JPG>)
 
 ## ChanceCalc Tab
 
-![ChanceCalc Ribbon](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide4.JPG>)
+![ChanceCalc Ribbon](<imgs/Slide4.JPG>)
 
-![SIP Input dialog](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide5.JPG>)
+![SIP Input dialog](<imgs/Slide5.JPG>)
 
-![Graphs](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide6.JPG>)
+![Graphs](<imgs/Slide6.JPG>)
 
-![Chance of Whatever](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide7.JPG>)
+![Chance of Whatever](<imgs/Slide7.JPG>)
 
-![Average, Std Dev, Percent](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide8.JPG>)
+![Average, Std Dev, Percent](<imgs/Slide8.JPG>)
 
-![Tail Risk](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide9.JPG>)
+![Tail Risk](<imgs/Slide9.JPG>)
 
-![Save as CSV](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide10.JPG>)
+![Save as CSV](<imgs/Slide10.JPG>)
 
-![Trial Info](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide11.JPG>)
+![Trial Info](<imgs/Slide11.JPG>)
 
-![Settings | Simulation](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide12.JPG>)
+![Settings | Simulation](<imgs/Slide12.JPG>)
 
-![Settings | Formatting & Diagnostic](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide13.JPG>)
+![Settings | Formatting & Diagnostic](<imgs/Slide13.JPG>)
 
-![Settings | Advanced](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide14.JPG>)
+![Settings | Advanced](<imgs/Slide14.JPG>)
 
 ## Metalog Tab
 
-![Metalog Ribbon](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide15.JPG>)
+![Metalog Ribbon](<imgs/Slide15.JPG>)
 
-![Metalog Interface](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide16.JPG>)
+![Metalog Interface](<imgs/Slide16.JPG>)
 
-![Metalog Interface - cont'd](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide17.JPG>)
+![Metalog Interface - cont'd](<imgs/Slide17.JPG>)
 
-![SIPmath mode, to Clipboard button](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide18.JPG>)
+![SIPmath mode, to Clipboard button](<imgs/Slide18.JPG>)
 
-![SIPmath mode, to File button](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide19.JPG>)
+![SIPmath mode, to File button](<imgs/Slide19.JPG>)
 
-![to Excel mode, Paste to Excel](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide20.JPG>)
+![to Excel mode, Paste to Excel](<imgs/Slide20.JPG>)
 
-![to Excel mode, Link to Excel](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide21.JPG>)
+![to Excel mode, Link to Excel](<imgs/Slide21.JPG>)
 
 ## Monte Carlo Tab
 
-![Monte Carlo Ribbon](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide22.JPG>)
+![Monte Carlo Ribbon](<imgs/Slide22.JPG>)
 
-![Appendix 1: Troubleshooting](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide23.JPG>)
+![Appendix 1: Troubleshooting](<imgs/Slide23.JPG>)
 
-![Appendix 2: Lambda Functions](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide24.JPG>)
+![Appendix 2: Lambda Functions](<imgs/Slide24.JPG>)
 
-![Lambda Functions, cont'd](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide25.JPG>)
+![Lambda Functions, cont'd](<imgs/Slide25.JPG>)
 
-![HDR and M.SPT_u functions](<Getting Started with ChanceCalc+ 2025-11-21 SS DE02/Slide26.JPG>)
+![HDR and M.SPT_u functions](<imgs/Slide26.JPG>)
 
 ## License
 
