@@ -27,7 +27,11 @@ Microsoft Excel
 
 - [`horizontal 1-line layout template.xlsx`](<src/horizontal 1-line layout template.xlsx>), [`vertical 1-col layout template.xlsx`](<src/vertical 1-col layout template.xlsx>) - hold formulas for SPT Metalog that can be copied down or across. Used by Monte Carlo | Generate Distribution | SPT Metalog
 
-- [`Metalog Sum of IID Triangulars and Lognormals.xlsx`](<src/Metalog Sum of IID Triangulars and Lognormals.xlsx>) - Used by Monte Carlo | Generate Distribution | Triangular, SUM Multple IIDs checkbox and Monte Carlo | Generate Distribution | Lognormal (Percentile), Monte Carlo | Generate Distribution | Lognormal (Mean and Stdev), Monte Carlo | Generate Distribution | Lognormal (True Mean and Stdev), Sum Multiply IIDs checkbox
+- [`Metalog Sum of IID Triangulars and Lognormals.xlsx`](<src/Metalog Sum of IID Triangulars and Lognormals.xlsx>) - Used by the following features:
+  - Monte Carlo | Generate Distribution | Triangular, SUM Multple IIDs checkbox
+  - Monte Carlo | Generate Distribution | Lognormal (Percentile)
+  - Monte Carlo | Generate Distribution | Lognormal (Mean and Stdev)
+  - Monte Carlo | Generate Distribution | Lognormal (True Mean and Stdev), Sum Multiply IIDs checkbox
 
 - [`Palette.xlsx`](<src/Palette.xlsx>) - Used by Settings dialog
 
