@@ -45,6 +45,9 @@ Monte Carlo | Generate Distribution | Lognormal (True Mean and Stdev), Sum Multi
 - Palette.xlsx
   - Used by Settings dialog
 
+- SPT Metalogs for SIPmath.xlsx
+  - Contains pre-built SPT Metalog formulas for SIPmath integration
+
 ## Installation
 
 - Download the ZIP archive with the current version of ChanceCalc from [here](https://github.com/probability-management/ChanceCalc/releases/)
@@ -67,6 +70,30 @@ Monte Carlo | Generate Distribution | Lognormal (True Mean and Stdev), Sum Multi
         - Press OK to close the Browse dialog
     - The ChanceCalc add-in should now be checked in the list of available add-ins
     - Press OK to close the add-ins manager.
+
+## Documentation
+
+Tutorials and guides are available in the [docs/](docs/) folder:
+
+- [ChanceCalc Tutorial](<docs/ChanceCalc Tutorial 2023-08-08.pdf>)
+- [Getting Started with Beta ChanceCalc Plus](<docs/Getting Started with Beta_ChanceCalc_Plus 2024-09-05.pdf>)
+- [Guide to ChanceCalc Plus](<docs/Guide to ChanceCalc Plus 2025-01-16.pdf>)
+
+## Examples
+
+Example models are available in the [examples/](examples/) folder demonstrating various use cases:
+
+- **Behind Schedule Example.xlsx** - Schedule delay analysis
+- **Below Projection Example.xlsx** - Below projection analysis
+- **Below Projection Multi Experiment.xlsx** - Multi-experiment below projection
+- **Beyond Budget.xlsx** - Budget overrun analysis
+- **COVID-19 Daily Hospitalization Forecast** - Pandemic forecasting model
+- **Demand_SIP_Library.xlsx** - Demand stochastic input library
+- **Development_Time_Library.SIPmath** - Development time stochastic library
+- **DFHBF MORS Library** - DFHBF stochastic input library
+- **First Part Failure.xlsx** - Reliability analysis
+- **Flight Hours to Failure Library.SIPmath** - Aviation reliability library
+- **Inventory.xlsx** - Inventory management model
 
 ## FAQ
 
@@ -145,6 +172,10 @@ Monte Carlo | Generate Distribution | Lognormal (True Mean and Stdev), Sum Multi
 ![Lambda Functions, cont'd](<imgs/Slide25.JPG>)
 
 ![HDR and M.SPT_u functions](<imgs/Slide26.JPG>)
+
+## Contributing
+
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
 ## License
 
